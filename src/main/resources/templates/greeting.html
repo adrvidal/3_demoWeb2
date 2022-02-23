@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<!--Aquí estamos importando las caracteristicas del MOTOR de PLANTILLAS thymeleaf en la línea 3-->
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Serving Web Content</title> 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<!--
+	${name} son Expresion languaje EL
+	En el Contolador hemos almacenado un dato en la variable name.
+	Aquí usando el EL que nos proporciona thymeleaf accedemos al valor y lo mostramos en el p -->
+    <p th:text="'Hello, ' + ${name} + '!'" />
+</body>
+</html>
